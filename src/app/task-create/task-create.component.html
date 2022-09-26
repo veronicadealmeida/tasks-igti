@@ -1,0 +1,69 @@
+<mat-toolbar color="primary">
+  <span>Nova Tarefa</span>
+</mat-toolbar>
+
+<form [formGroup]="taskFormGroup" id="task-create" (ngSubmit)="createTask()">
+  <div class="example-container">
+    <mat-form-field appearance="standard">
+      <mat-label>Selecione o Status</mat-label>
+      <mat-select formControlName="status">
+        <mat-option value="2" status></mat-option>
+        <mat-option [value]="taskStatus.Done">Concluída</mat-option>
+        <mat-option [value]="taskStatus.Pendent">Pendente</mat-option>
+        <mat-option [value]="taskStatus.Canceled">Cancelada</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field appearance="standard">
+      <mat-label>Título</mat-label>
+      <input matInput formControlName="title" />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field appearance="standard">
+      <mat-label>Descrição</mat-label>
+      <input matInput formControlName="description" />
+    </mat-form-field>
+  </div>
+
+  <br />
+
+  <mat-form-field appearance="standard">
+    <mat-label>Categoria</mat-label>
+    <input matInput formControlName="category" />
+  </mat-form-field>
+
+  <br />
+
+  <mat-form-field appearance="standard">
+    <mat-label>Data Limite</mat-label>
+    <input matInput [matDatepicker]="dateLimit" formControlName="dateLimit" />
+    <mat-hint>DD/MM/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="dateLimit"></mat-datepicker-toggle>
+    <mat-datepicker #dateLimit></mat-datepicker>
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="standard">
+    <mat-label>Data de Conclusão</mat-label>
+    <input matInput [matDatepicker]="dateDone" formControlName="dateDone" />
+    <mat-hint>DD/MM/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="dateDone"></mat-datepicker-toggle>
+    <mat-datepicker #dateDone></mat-datepicker>
+  </mat-form-field>
+
+  <div>
+    <a routerLink="/tasks" class="actions" mat-raised-button>Cancelar</a>
+    <button
+      class="actions"
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="taskFormGroup.invalid"
+    >
+      Criar
+    </button>
+  </div>
+</form>

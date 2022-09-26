@@ -1,0 +1,66 @@
+{
+  "hasNext": false,
+  "nextId": 7,
+  "items": [
+    {
+      "id": 1,
+      "status": 2,
+      "title": "Task 001",
+      "description": "blá blá blá 1",
+      "dateLimit": "20220101",
+      "dateDone": "",
+      "category": "Pessoal",
+      "actions": ["canDone", "canView", "canSet", "canCancel"]
+    },
+    {
+      "id": 2,
+      "status": 1,
+      "title": "Task 002",
+      "description": "blá blá blá 2",
+      "dateLimit": "20220102",
+      "dateDone": "20220102",
+      "category": "Profissional",
+      "actions": ["canDone", "canView", "canSet", "canCancel"]
+    },
+    {
+      "id": 3,
+      "status": 2,
+      "title": "Task 003",
+      "description": "blá blá blá 3",
+      "dateLimit": "20220301",
+      "dateDone": "",
+      "category": "Profissional",
+      "actions": ["canDone", "canView", "canSet", "canCancel"]
+    },
+    {
+      "id": 4,
+      "status": 3,
+      "title": "Task 004",
+      "description": "blá blá blá 3",
+      "dateLimit": "20220301",
+      "dateDone": "",
+      "category": "Profissional",
+      "actions": ["canDone", "canView", "canSet", "canCancel"]
+    },
+    {
+      "id": 5,
+      "status": 2,
+      "title": "Task 005",
+      "description": "blá blá blá 3",
+      "dateLimit": "20220301",
+      "dateDone": "20220301",
+      "category": "Profissional",
+      "actions": ["canDone", "canView", "canSet", "canCancel"]
+    },
+    {
+      "id": 6,
+      "status": 3,
+      "title": "Task 006",
+      "description": "blá blá blá 3",
+      "dateLimit": "20220303",
+      "dateDone": "",
+      "category": "Profissional",
+      "actions": ["canDone", "canView", "canSet", "canCancel"]
+    }
+  ]
+}

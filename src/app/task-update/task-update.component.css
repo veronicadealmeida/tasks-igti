@@ -1,0 +1,15 @@
+#task-create {
+  text-align: center;
+}
+
+mat-form-field {
+  width: 70%;
+  padding: 10px;
+}
+
+.actions {
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  float: inline-end;
+}
